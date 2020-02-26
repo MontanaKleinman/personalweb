@@ -1,0 +1,13 @@
+.projectAdjustments {
+  grid-template-rows: minmax(min-content, 10rem) auto;
+  color: black;
+  grid-gap: 2rem;
+  backdrop-filter: blur(2px);
+}
+
+.projectScreen {
+  display: grid;
+  place-items: center center;
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,70 @@
+.card {
+  box-shadow: -5px -5px 10px #ffffffb2, 5px 5px 7px rgba(94, 104, 121, 0.945);
+  position: relative;
+  display: grid;
+  place-items: center center;
+  width: 100%;
+  min-height: 150px;
+  border-radius: 2.5rem;
+  background-color: inherit;
+  transition: all ease 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+
+  &#techSkills {
+    .card__face--front {
+      background-color: rgba(117, 210, 251, 0.75);
+    }
+
+    .card__face--back {
+      background-color: rgba(117, 210, 251, 0.25);
+    }
+  }
+
+  &#teamSkills {
+    .card__face--front {
+      background-color: rgba(111, 71, 203, 0.75);
+    }
+
+    .card__face--back {
+      background-color: rgba(111, 71, 203, 0.25);
+    }
+  }
+
+  &#interests {
+    .card__face--front {
+      background-color: rgba(233, 116, 209, 0.75);
+    }
+
+    .card__face--back {
+      background-color: rgba(233, 116, 209, 0.25);
+    }
+  }
+
+  &.flip {
+    transform: rotateY(180deg);
+  }
+
+  &:hover {
+    border: 0.5rem solid black;
+  }
+
+  &__face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    backface-visibility: hidden;
+
+    &--front {
+      display: grid;
+      transform: rotateY(0deg);
+      place-items: center center;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+      padding: 0.5rem;
+    }
+  }
+}

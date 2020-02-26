@@ -1,0 +1,74 @@
+.contactAdjustments {
+  grid-template-rows: min-content auto;
+  color: black;
+  backdrop-filter: blur(2px);
+}
+
+.contactScreen {
+  display: grid;
+  position: relative;
+  place-self: center center;
+  place-items: center center;
+  list-style-type: none;
+  width: 90%;
+  height: 100%;
+
+  svg {
+    cursor: pointer;
+  }
+}
+
+.iconLink {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 10px;
+  box-shadow: 1rem 1rem 5rem rgb(94, 94, 94);
+  transition: 1s ease;
+  fill: white;
+  background-color: black;
+
+  @media only screen and (max-width: 1200px) {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  @media only screen and (max-width: 800px) {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 11rem;
+    height: 11rem;
+  }
+
+  @media only screen and (max-width: 500px) {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  &:hover {
+    animation: swing 2s infinite;
+  }
+}
+
+.leftArrow {
+  transform: rotate(40deg) translateY(-60%);
+  position: absolute;
+  width: 25vw;
+  top: 50%;
+  left: -10%;
+}
+
+.rightArrow {
+  transform: rotate(-40deg) scaleX(-1) translateY(-60%);
+  position: absolute;
+  width: 25vw;
+  top: 50%;
+  right: -10%;
+}

@@ -1,0 +1,8 @@
+.fadeIn {
+  animation: fadeIn 1s;
+}
+
+.fadeOutIn {
+  transition: width 0s 0.5s, height 0s 0.5s;
+  animation: fadeOutIn 1s;
+}

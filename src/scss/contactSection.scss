@@ -19,6 +19,17 @@
 }
 
 .iconLink {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 100px;
+
+  @media only screen and (orientation: portrait) {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: none;
+  }
+}
+
+.icon {
   width: 20rem;
   height: 20rem;
   border-radius: 10px;
@@ -55,20 +66,4 @@
   &:hover {
     animation: swing 2s infinite;
   }
-}
-
-.leftArrow {
-  transform: rotate(40deg) translateY(-60%);
-  position: absolute;
-  width: 25vw;
-  top: 50%;
-  left: -10%;
-}
-
-.rightArrow {
-  transform: rotate(-40deg) scaleX(-1) translateY(-60%);
-  position: absolute;
-  width: 25vw;
-  top: 50%;
-  right: -10%;
 }

@@ -2,11 +2,10 @@ const compInfo = [
   {
     id: 1,
     description: [
-      `50 hour comprehensive overview of the most fundamental and useful front-end and back-end programming topics.`,
       `Focus on creating responsive websites, web applications and RESTful APIs.`,
-      `Programmed websites and web application with JavaScript, React, Node, and MongoDB.`
-      // `Front-end programming topics reviewed include HTML, CSS, JavaScript, BootStrap, and React.`,
-      // `Back-end programming topics reviewed include Node, Express, MongoDB, and Mongoose.`
+      `Programmed websites and web application with JavaScript, React, Node, and MongoDB.`,
+      `Front-end programming topics reviewed include HTML, CSS, JavaScript, BootStrap, and React.`,
+      `Back-end programming topics reviewed include Node, Express, MongoDB, and Mongoose.`
     ],
     qualification: 'The Complete 2019/2020 Web Development Bootcamp',
     institution: 'Udemy - Angela Yu',
@@ -15,8 +14,8 @@ const compInfo = [
   {
     id: 2,
     description: [
-      `12 hour basic overview of the most important HTML and CSS features.`,
-      `Focus on building responsive websites with emphasis on user-friendliness and modern design patterns.`, // `Gained extensive knowledge on how to use a number of HTML and CSS features.`,
+      `Focus on building responsive websites with emphasis on user-friendliness and modern design patterns.`,
+      `Gained extensive knowledge on how to use a number of HTML and CSS features.`,
       `Programmed responsive websites with HTML5 and CSS3.`
     ],
     qualification: 'Build Responsive Real World Websites with HTML5 and CSS3',
@@ -26,8 +25,9 @@ const compInfo = [
   {
     id: 3,
     description: [
-      `28 hour comprehensive overview of how to use flexbox, CSS-grids, and the CSS preprocessor SASS.`,
-      `Focus on building responsive and scaleable websites using simple and efficient style guides.`, // `Used the CSS preprocessor Sass to create simple to understand style guides.` // `Gained extensive knowledge on how to use flexbox and CSS-grids to create responsive and scaleable websites.`,
+      `Focus on building responsive and scaleable websites using simple and efficient style guides.`,
+      `Used the CSS preprocessor Sass to create simple to understand style guides.`,
+      `Gained extensive knowledge on how to use flexbox and CSS-grids to create responsive and scaleable websites.`,
       `Programmed websites with CSS keyframes and media-queries.`
     ],
     qualification: 'Advanced CSS and Sass: Flexbox, Grid, Animations and More',
@@ -37,10 +37,10 @@ const compInfo = [
   {
     id: 4,
     description: [
-      `28 hour comprehensive overview of the most fundamental and useful JavaScript topics. `,
-      `Focus on creating web applications with a number of JavaScript features.`, // `Used different approaches to creating objects with ES6 classes and prototypes.`, // `Gained extensive knowledge on how to use comparisons, conditions and loops to create software.`, // `Reviewed JavaScript primitives and objects with increasing complexities.`,
+      `Focus on creating web applications with a number of JavaScript features.`,
+      `Used different approaches to creating objects with ES6 classes and prototypes.`,
+      `Gained extensive knowledge on how to use comparisons, conditions and loops to create software.`,
       `Programmed websites with AJAX, ES6 Promises, and ES8 async/await syntax.`
-      // `Compliled, transpiled and compressed code with Babel and Webpack.`
     ],
     qualification: 'The Complete JavaScript Course 2019: Build Real Projects',
     institution: 'Udemy - Jonas Schmedtmann',
@@ -90,9 +90,8 @@ const eduInfo = [
     description: [
       `Explored how children learn with a focus on biological, social and psychological influences on their well-being.`,
       `Gained an understanding of best teaching practices for group, partner, and individual learning sessions.`,
-      // `Created and taught lessons for a wide-range of learners that took into account their unique identities to ensure learning for all.`,
-      `Participated in professional learning communities that stimulated the setting and attainment of professional goals.`
-      // `Created informative, fair, and relavent assessments to evaluate and further student academic growth.`
+      `Participated in professional learning communities that stimulated the setting and attainment of professional goals.`,
+      `Created informative, fair, and relavent assessments to evaluate and further student academic growth.`
     ],
     qualification: 'Master of Arts in Child Study and Education',
     institution: 'University of Toronto, Toronto, ON',
@@ -101,8 +100,7 @@ const eduInfo = [
   {
     id: 2,
     description: [
-      // `Explored how the brain works from numerous psychological perspectives.`,
-      // `Examined how humans form memories and how chemical stimuli effect brain functioning.`,
+      `Examined how humans form memories and how chemical stimuli effect brain functioning.`,
       `Studied cognitive and behaviourist approaches to thinking and behaviour modification.`,
       `Researched the impact of biology, psychology and sociology on human development.`,
       `Created and tested a thesis about the quantifiable nature of human responses to tactile illusions.`

@@ -2,6 +2,8 @@
   display: grid;
   height: min-content;
   margin: auto;
+  background-color: black;
+  color: white;
 }
 
 .footerAdjustments {
@@ -10,7 +12,6 @@
   text-align: center;
   border-top: solid 0.1rem black;
   padding: 1rem 0;
-  color: black;
   backdrop-filter: blur(10px);
 }
 

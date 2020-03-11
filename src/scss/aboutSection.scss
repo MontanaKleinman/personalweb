@@ -16,8 +16,7 @@
   place-items: center center;
 
   grid-template-columns: 2fr 1fr;
-  box-shadow: -5px -5px 10px #ffffffb2, 5px 5px 7px rgba(94, 104, 121, 0.945);
-  background-color: rgba(111, 71, 203, 0.25);
+
   min-height: 65vh;
 
   @media only screen and (max-width: 1000px) {
@@ -45,28 +44,29 @@
     position: absolute;
     width: 300px;
     height: 300px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 30px rgba(117, 210, 251, 0.25);
+
+    box-shadow: 0 0 0 10px rgba(117, 211, 251, 0.5);
 
     @media only screen and (max-width: 1000px) {
+      border-radius: 50%;
       margin: 0;
       width: 5px;
       height: 5px;
-      box-shadow: 0 0 0 1px rgba(117, 210, 251, 0.25), 0 0 0 2px white,
-        0 0 0 3px rgba(117, 210, 251, 0.25), 0 0 0 4px white,
-        0 0 0 5px rgba(117, 210, 251, 0.25), 0 0 0 6px white,
-        0 0 0 7px rgba(117, 210, 251, 0.25), 0 0 0 8px white,
-        0 0 0 9px rgba(117, 210, 251, 0.25), 0 0 0 10px white,
-        0 0 0 11px rgba(117, 210, 251, 0.25), 0 0 0 12px white,
-        0 0 0 13px rgba(117, 210, 251, 0.25);
+      box-shadow: 0 0 0 1px rgba(117, 211, 251, 0.5), 0 0 0 2px white,
+        0 0 0 3px rgba(117, 211, 251, 0.5), 0 0 0 4px white,
+        0 0 0 5px rgba(117, 211, 251, 0.5), 0 0 0 6px white,
+        0 0 0 7px rgba(117, 211, 251, 0.5), 0 0 0 8px white,
+        0 0 0 9px rgba(117, 211, 251, 0.5), 0 0 0 10px white,
+        0 0 0 11px rgba(117, 211, 251, 0.5), 0 0 0 12px white,
+        0 0 0 13px rgba(117, 211, 251, 0.5);
       transform: scale(45);
     }
   }
 
   .aboutPhoto {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+    width: 275px;
+    height: 275px;
+
     filter: grayscale(100);
     pointer-events: none;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -77,6 +77,7 @@
     @media only screen and (max-width: 1000px) {
       width: 225px;
       height: 225px;
+      border-radius: 50%;
     }
   }
 }
@@ -90,18 +91,13 @@
   grid-gap: 2rem;
   padding: 2.5vh 5vw;
 
-  @media only screen and (max-width: 1000px) {
-    background-color: rgba(111, 71, 203, 0.25);
-    box-shadow: -5px -5px 10px #ffffffb2, 5px 5px 7px rgba(94, 104, 121, 0.945);
-  }
-
   .aboutIntro {
     position: relative;
     text-align: center;
     padding: 1rem;
     width: 100%;
-    background-color: rgba(117, 210, 251, 0.25);
-    border-radius: 25px;
+    background-color: rgba(117, 211, 251, 0.5);
+
     box-shadow: -5px -5px 10px #ffffffb2, 5px 5px 7px rgba(94, 104, 121, 0.945);
   }
 }

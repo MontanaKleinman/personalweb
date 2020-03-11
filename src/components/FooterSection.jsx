@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div id="footer" className="footerBox footerAdjustments">
       <div className="acknowledgement">
-        <p>This website was designed and programmed by Montana&nbsp;Kleinman</p>
+        <p>This website was programmed and designed by Montana&nbsp;Kleinman</p>
       </div>
       <p className="footer">
         Icons made by{' '}

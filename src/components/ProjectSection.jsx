@@ -10,7 +10,7 @@ function Project() {
         <h2 className="subTitle">Web Portfolio</h2>
       </div>
       <div className="projectScreen">
-        <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut">
+        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
           <div className="carouselBox">
             <ControlledCarousel />
           </div>

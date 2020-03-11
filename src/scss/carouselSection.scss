@@ -12,6 +12,19 @@
   width: 5rem;
   height: 5rem;
   background-color: black;
+
+  &:nth-of-type(1) {
+    left: -90px;
+
+    @media only screen and (max-width: 800px) {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    @media only screen and (max-width: 500px) {
+      left: -60px;
+    }
+  }
 }
 
 .carousel-control-next {
@@ -22,20 +35,29 @@
   width: 5rem;
   height: 5rem;
   background-color: black;
+
+  &:nth-of-type(2) {
+    right: -90px;
+
+    @media only screen and (max-width: 800px) {
+      width: 4rem;
+      height: 4em;
+    }
+
+    @media only screen and (max-width: 500px) {
+      right: -60px;
+    }
+  }
 }
 
 .carouselBox {
-  width: 80vw;
+  width: 60vw;
   height: 60vh;
   box-shadow: -5px -5px 10px #ffffffb2, 5px 5px 7px rgba(94, 104, 121, 0.945);
-  background-color: rgb(244, 178, 123);
+  border: 1rem black solid;
   border-radius: 2.5rem;
   cursor: pointer;
   transition: all ease 0.8s;
-
-  &:hover {
-    box-shadow: 2rem 2rem black;
-  }
 }
 
 .slide {
@@ -49,6 +71,11 @@
 
 .carousel-item {
   height: 100%;
+
+  &:hover h3 {
+    animation: text-color-swap 2s infinite;
+    text-shadow: -5px 10px 4px rgb(0, 45, 248);
+  }
 }
 
 .carousel-caption {
@@ -56,6 +83,7 @@
   width: 100%;
   height: 100%;
   place-items: center center;
+  grid-template-rows: 4fr 1fr 1fr;
   right: 0;
   bottom: 0;
   top: 0;
@@ -63,9 +91,8 @@
 
   h3 {
     width: 80%;
-    animation: text-shadow-swap 1s infinite;
-    text-shadow: -0px 4px 0px #00e6e6, -0px 8px 0px #01cccc,
-      -0px 12px 0px #00bdbd;
+    color: black;
+    text-shadow: -5px 10px 4px rgb(185, 185, 185);
   }
 
   p {

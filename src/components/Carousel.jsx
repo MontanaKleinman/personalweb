@@ -15,10 +15,24 @@ function ControlledCarousel() {
       activeIndex={index}
       direction={direction}
       onSelect={handleSelect}
-      interval={null}
-      controls={false}
-      indicators={false}
+      interval={false}
+      controls={true}
+      indicators={true}
     >
+      <Carousel.Item>
+        <a
+          href="https://montanakleinman.ca/checkers.html"
+          target="_blank"
+          title="Checkers"
+          rel="noopener noreferrer"
+        >
+          <Carousel.Caption>
+            <h3 className="gameTitle">Checkers</h3>
+            <p>A Two Player Checker Recreation</p>
+            <p>&lt; A React and Redux Project &gt;</p>
+          </Carousel.Caption>
+        </a>
+      </Carousel.Item>
       <Carousel.Item>
         <a
           href="https://montanakleinman.ca/pair-up.html"
@@ -28,7 +42,8 @@ function ControlledCarousel() {
         >
           <Carousel.Caption>
             <h3 className="gameTitle">Pair Up</h3>
-            {/* <p>A Cooperative and Competitive Card Matching Game</p> */}
+            <p>A Cooperative and Competitive Card Matching Game</p>
+            <p>&lt; A JavaScript and jQuery Project &gt;</p>
           </Carousel.Caption>
         </a>
       </Carousel.Item>

@@ -1,0 +1,105 @@
+.carousel {
+  &__contentBlueprint {
+    display: grid;
+    grid-template-rows: auto 5rem;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+  }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    font-size: 2rem;
+    background-color: grey;
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+
+  &__previous {
+    display: grid;
+    place-items: center;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    border-radius: 0 0 0 1.5rem;
+
+    &:hover {
+      background-color: rgb(82, 220, 255);
+    }
+  }
+
+  &__next {
+    display: grid;
+    place-items: center;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    border-radius: 0 0 1.5rem 0;
+
+    &:hover {
+      background-color: rgb(82, 220, 255);
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    place-items: center;
+
+    &:hover {
+      .carousel__title {
+        animation: text-color-swap 2s infinite;
+        color: rgb(0, 45, 248);
+      }
+    }
+  }
+
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 11rem;
+
+    @media only screen and (max-width: 1200px) {
+      font-size: 9rem;
+    }
+
+    @media only screen and (max-width: 800px) {
+      font-size: 7rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      font-size: 5rem;
+    }
+  }
+
+  &__subtitle {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+
+    @media only screen and (max-width: 1200px) {
+      font-size: 2.6rem;
+    }
+
+    @media only screen and (max-width: 800px) {
+      font-size: 2.2rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__hidden {
+    display: none;
+  }
+}

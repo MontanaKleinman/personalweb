@@ -1,0 +1,19 @@
+.footer {
+  &__outlineBlueprint {
+    height: min-content;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-top: solid 0.1rem black;
+    padding: 1rem 0;
+    backdrop-filter: blur(10px);
+  }
+
+  &__contentBlueprint {
+    color: white;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    text-align: center;
+  }
+}

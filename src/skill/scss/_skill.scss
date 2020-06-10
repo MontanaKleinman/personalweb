@@ -1,0 +1,71 @@
+.skill {
+  &__outlineBlueprint {
+    grid-template-rows: minmax(min-content, 10rem) auto;
+    color: black;
+    grid-gap: 2rem;
+    backdrop-filter: blur(2px);
+    display: grid;
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+    margin-bottom: 5rem;
+  }
+
+  &__contentBlueprint {
+    display: grid;
+    height: 100%;
+    place-self: center center;
+    width: 90%;
+    grid-gap: 2rem;
+    perspective: 10000;
+    grid-template-rows: repeat(3, 1fr);
+
+    h3 {
+      text-align: center;
+    }
+  }
+
+  &__showcase {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+    @media only screen and (max-width: 900px) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
+
+  &__visible {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    place-items: center center;
+
+    img {
+      align-self: end;
+      width: 5rem;
+      height: 5rem;
+
+      @media only screen and (max-width: 900px) {
+        width: 4rem;
+        height: 4rem;
+      }
+
+      @media only screen and (max-width: 600px) {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+
+    p {
+      align-self: center;
+      text-align: center;
+      margin: 0;
+    }
+  }
+}

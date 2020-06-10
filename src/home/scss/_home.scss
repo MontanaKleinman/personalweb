@@ -1,0 +1,128 @@
+.home {
+  &__outlineBlueprint {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 5rem;
+    position: relative;
+    color: black;
+    background-color: rgb(82, 220, 255);
+    padding: 5%;
+  }
+
+  &__contentBlueprint {
+    position: relative;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10rem auto;
+    background-image: url(../img/programmerBackground.svg);
+    background-repeat: no-repeat;
+    background-size: 35vw;
+    background-position: center right 75px;
+    background-color: white;
+    border-radius: 5rem;
+    place-items: center start;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072);
+
+    @media only screen and (orientation: portrait) {
+      background-position: center bottom 25px;
+      background-size: 75vw;
+      place-items: start center;
+    }
+
+    @media only screen and (max-width: 800px) {
+      grid-template-rows: 1fr;
+    }
+
+    h1 {
+      font-size: 5rem;
+
+      @media only screen and (max-width: 1400px) {
+        font-size: 4rem;
+      }
+
+      @media only screen and (max-width: 1200px) {
+        font-size: 3.5rem;
+      }
+
+      @media only screen and (max-width: 800px) {
+        font-size: 3rem;
+      }
+
+      @media only screen and (max-width: 350px) {
+        font-size: 2.5rem;
+      }
+    }
+
+    p {
+      font-size: 10rem;
+
+      @media only screen and (max-width: 1400px) {
+        font-size: 8rem;
+      }
+
+      @media only screen and (max-width: 1200px) {
+        font-size: 6.5rem;
+      }
+
+      @media only screen and (max-width: 800px) {
+        font-size: 5rem;
+      }
+
+      @media only screen and (max-width: 350px) {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  &__navigation {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(6, 1fr);
+    place-self: center center;
+    place-items: center center;
+    border-radius: 25px;
+    width: 90%;
+
+    @media only screen and (max-width: 800px) {
+      display: none;
+    }
+
+    li {
+      padding: 1rem;
+
+      &:hover {
+        background-color: rgba(111, 71, 203, 0.25);
+        border-radius: 25px;
+      }
+    }
+  }
+
+  &__content {
+    margin: 0 0 10rem 2.5rem;
+    display: grid;
+    place-items: center;
+    width: 50%;
+    text-align: center;
+    grid-template-rows: repeat(2, min-content);
+
+    @media only screen and (orientation: portrait) {
+      width: 100%;
+      margin: 75px 0 0;
+    }
+
+    @media only screen and (max-width: 800px) and (orientation: landscape) {
+      margin: 0 2.5vw;
+    }
+  }
+
+  h1 {
+    align-self: start;
+  }
+
+  p {
+    align-self: end;
+  }
+}

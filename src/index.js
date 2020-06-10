@@ -1,23 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './scss/animations.scss';
-import './scss/atoms.scss';
-import './scss/base.scss';
-import './scss/cards.scss';
-import './scss/containers.scss';
-import './scss/fonts.scss';
-import './scss/footerSection.scss';
-import './scss/navigation.scss';
-import './scss/typography.scss';
-import './scss/aboutSection.scss';
-import './scss/carouselSection.scss';
-import './scss/contactSection.scss';
-import './scss/homeSection.scss';
-import './scss/projectSection.scss';
-import './scss/resumeSection.scss';
-import './scss/skillSection.scss';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));

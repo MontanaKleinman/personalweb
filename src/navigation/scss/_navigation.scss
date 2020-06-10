@@ -1,0 +1,125 @@
+.navigation {
+  display: grid;
+  position: fixed;
+  z-index: 100;
+
+  .hidden {
+    transition: 1s ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &__button {
+    transition: ease 0.5s;
+    position: relative;
+    height: 4.5rem;
+    width: 4.5rem;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 50;
+    background-color: white;
+    border: solid 0.25rem black;
+
+    @media only screen and (max-width: 800px) {
+      height: 4rem;
+      width: 4rem;
+    }
+
+    &:hover .navigation__bar {
+      background-color: transparent;
+
+      &::before {
+        content: '';
+        top: 0;
+
+        transform: rotate(135deg);
+      }
+
+      &::after {
+        content: '';
+        top: 0;
+
+        transform: rotate(225deg);
+      }
+    }
+  }
+
+  &__bar {
+    position: absolute;
+    width: 50%;
+    height: 5%;
+    background-color: black;
+    top: 50%;
+    left: 25%;
+    z-index: 100;
+    transition: 0.5s;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      top: 0.75rem;
+      left: 0;
+      transition: 1s;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      top: -0.75rem;
+      left: 0;
+      transition: 1s;
+    }
+  }
+
+  &__menu {
+    display: grid;
+    place-items: center center;
+    width: 100%;
+    position: fixed;
+    list-style: none;
+    z-index: -100;
+    transition: ease 0.5s;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  &__items {
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(6, 1fr);
+    place-items: center center;
+    width: 100%;
+    height: 8rem;
+    transition: ease 1s;
+    padding: 0 3rem;
+    background-color: white;
+    box-shadow: -5px -5px 10px #ffffffb2, 5px 5px 7px rgba(94, 104, 121, 0.945);
+    border-top: solid 0.5rem rgba(117, 210, 251, 1);
+    border-bottom: solid 0.5rem rgba(117, 210, 251, 1);
+
+    @media only screen and (max-width: 800px) {
+      height: 12rem;
+    }
+
+    .highlight {
+      padding: 1rem;
+
+      &:hover {
+        background-color: rgba(111, 71, 203, 0.25);
+        border-radius: 25px;
+      }
+    }
+
+    @media only screen and (max-width: 800px) {
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
